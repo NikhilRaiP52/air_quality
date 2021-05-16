@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.chart.AqiChartFragment">
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@color/header_transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/header"
+        app:layout_constraintStart_toEndOf="@+id/backView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/air_quality" />
+
+    <ImageView
+        android:id="@+id/backView"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:padding="16dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintBottom_toBottomOf="@id/header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/header" />
+
+
+     <com.github.mikephil.charting.charts.LineChart
+         android:id="@+id/chartView"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/header" />
+
+    <!--<com.aveek.aesthetic_graphview.GraphView
+        android:id="@+id/chartView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:circleColor="#000000"
+        app:drawGraduations="true"
+        app:drawGrids="true"
+        app:gradientEndColor="@color/endColor"
+        app:gradientStartColor="#fef08c"
+        app:graduationColor="@color/colorPrimaryDark"
+        app:graphType="START_AT_LEFT"
+        app:gridColor="#fef08c"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:lineColor="#f8cb7a"
+        app:pathWidth="2" />-->
+
+    <!--<com.klim.tcharts.TChart
+        android:id="@+id/chartView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        app:backgroundColor="#785630"
+        app:detailDivisionColor="#fff"
+        app:detailLabelsFontColor="#BA1B289E"
+        app:detailLineSelectedPosition="#871893"
+        app:infoWindowBackground="#6338C6"
+        app:infoWindowShadowColor="#980A16"
+        app:infoWindowTitleColor="#117F8E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:navBordersColor="#000000"
+        app:navViewFillColor="#BA7C3838"
+        app:showTitle="true"
+        app:title="Air Quality"
+        app:titleFontColor="#339728"
+        app:titleFontSize="16dp" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
