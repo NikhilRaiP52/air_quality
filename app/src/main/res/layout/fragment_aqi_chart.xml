@@ -49,48 +49,4 @@
          app:layout_constraintStart_toStartOf="parent"
          app:layout_constraintTop_toBottomOf="@id/header" />
 
-    <!--<com.aveek.aesthetic_graphview.GraphView
-        android:id="@+id/chartView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:circleColor="#000000"
-        app:drawGraduations="true"
-        app:drawGrids="true"
-        app:gradientEndColor="@color/endColor"
-        app:gradientStartColor="#fef08c"
-        app:graduationColor="@color/colorPrimaryDark"
-        app:graphType="START_AT_LEFT"
-        app:gridColor="#fef08c"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/header"
-        app:lineColor="#f8cb7a"
-        app:pathWidth="2" />-->
-
-    <!--<com.klim.tcharts.TChart
-        android:id="@+id/chartView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="8dp"
-        android:padding="16dp"
-        app:backgroundColor="#785630"
-        app:detailDivisionColor="#fff"
-        app:detailLabelsFontColor="#BA1B289E"
-        app:detailLineSelectedPosition="#871893"
-        app:infoWindowBackground="#6338C6"
-        app:infoWindowShadowColor="#980A16"
-        app:infoWindowTitleColor="#117F8E"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/header"
-        app:navBordersColor="#000000"
-        app:navViewFillColor="#BA7C3838"
-        app:showTitle="true"
-        app:title="Air Quality"
-        app:titleFontColor="#339728"
-        app:titleFontSize="16dp" />-->
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
